@@ -314,7 +314,7 @@
     <span class="diff-label">ポポと岐阜度</span>
     <button class="diff-btn" id="d-easy" onclick="setDiff('easy')">かんたん</button>
     <button class="diff-btn active" id="d-hard" onclick="setDiff('hard')">ふつう</button>
-    <button class="diff-btn" id="d-perfect" onclick="setDiff('perfect')"めちゃつよい</button>
+    <button class="diff-btn" id="d-perfect" onclick="setDiff('perfect')">めちゃつよい</button>
   </div>
 
   <div class="status-bar" id="status">あなたの番です（○）</div>
@@ -475,7 +475,7 @@ function endGame(r) {
     });
   } else {
     bar.className = 'status-bar win-x';
-    bar.textContent = 'AI の勝ち！ またね';
+    bar.textContent = '露炉の犬の勝ち！';
     scores.ai++;
     r.line.forEach(i => {
       const el = document.getElementById('c' + i);
