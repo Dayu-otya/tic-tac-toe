@@ -314,7 +314,7 @@
     <span class="diff-label">ポポと岐阜度</span>
     <button class="diff-btn" id="d-easy" onclick="setDiff('easy')">かんたん</button>
     <button class="diff-btn active" id="d-hard" onclick="setDiff('hard')">ふつう</button>
-    <button class="diff-btn" id="d-perfect" onclick="setDiff('perfect')"つよい</button>
+    <button class="diff-btn" id="d-perfect" onclick="setDiff('perfect')"めちゃつよい</button>
   </div>
 
   <div class="status-bar" id="status">あなたの番です（○）</div>
@@ -467,7 +467,7 @@ function endGame(r) {
     scores.draw++;
   } else if (r.winner === 'O') {
     bar.className = 'status-bar win-o';
-    bar.textContent = 'あなたの勝ち！ おめでとう 🎉';
+    bar.textContent = 'あなたの勝ち！ ぽ～ぽっぽ 🎉';
     scores.player++;
     r.line.forEach(i => {
       const el = document.getElementById('c' + i);
